@@ -25,9 +25,9 @@ public class Circle : GeometricFigure
 
     private double ValidateR(double r)
     {
-        if (r <= 0 )
+        if (double.IsNaN(r)||double.IsInfinity(r)||r <= 0 )
         {
-            throw new ArgumentOutOfRangeException(nameof(r),$"Radius {r} must be greater than zero.");
+            throw new ArgumentOutOfRangeException(nameof(r),$"Radius {r} must be greater than zero, real and positive");
         }
         return r;
     }

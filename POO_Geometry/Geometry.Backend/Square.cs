@@ -22,9 +22,9 @@
         public override double GetPerimeter() => 4 * A;
         private double ValidateA(double a)
         {
-            if (a <= 0)
+            if (double.IsNaN(a)||double.IsInfinity(a)||a <= 0)
             {
-                throw new ArgumentOutOfRangeException(nameof(a), $"Side {a} must be greater than zero.");
+                throw new ArgumentOutOfRangeException(nameof(a), $"Side {a} must be greater than zero,real and positive.");
             }
             return a;
         }
