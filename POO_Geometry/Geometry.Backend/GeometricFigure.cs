@@ -8,7 +8,7 @@ public abstract class GeometricFigure
     //Methods
     public abstract double GetArea();
     public abstract double GetPerimeter();
-    public override string ToString()=> $"{Name,-15} => Area.....:{GetArea(),15:N5}  Perimiter:{GetPerimeter(),15:N5}";
+    public override string ToString()=> $"{Name,-15} => Area.....:{GetArea(),15:N5}  Perimeter:{GetPerimeter(),15:N5}";
   
 }
 
