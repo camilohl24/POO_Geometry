@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Geometry.Backend/Geometry.Backend.csproj" Id="d05e0461-f9cb-4d23-9f85-f383461f9fca" />
+  <Project Path="Geometry/Geometry.csproj" Id="e9db20e6-894d-4974-ac08-01f280a3a9cc" />
+</Solution>
