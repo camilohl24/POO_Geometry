@@ -23,16 +23,18 @@ public class Circle : GeometricFigure
 
     //Methods
 
-    private double ValidateR(double r)
-    {
-        if (double.IsNaN(r)||double.IsInfinity(r)||r <= 0 )
-        {
-            throw new ArgumentOutOfRangeException(nameof(r),$"Radius {r} must be greater than zero, real and positive");
-        }
-        return r;
-    }
+    
     public override double GetArea() => Math.PI * R *R;
 
 
     public override double GetPerimeter() => 2 * Math.PI * R ;
+
+    private double ValidateR(double r)
+    {
+        if (double.IsNaN(r) || double.IsInfinity(r) || r <= 0)
+        {
+            throw new ArgumentOutOfRangeException(nameof(r), $"Radius {r} must be greater than zero, real and positive");
+        }
+        return r;
+    }
 }
